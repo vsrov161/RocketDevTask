@@ -18,7 +18,7 @@ services:
       retries: 5
   # wp
   wordpress:
-    image: wordpress:6-apache
+    image: wordpress:7-apache
     container_name: wordpress
     restart: unless-stopped
     depends_on:
