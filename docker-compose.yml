@@ -36,7 +36,7 @@ services:
   
   # nginx
   nginx:
-    image: nginx:alpine
+    image: nginx:alpine # use latest in prod
     container_name: nginx_proxy
     restart: unless-stopped
     depends_on:
