@@ -24,7 +24,7 @@ services:
     restart: unless-stopped
     depends_on:
       mysql:
-        condition: service-healthy
+        condition: service_healthy
     environment:
       WORDPRESS_DB_HOST: mysql:3306
       WORDPRESS_DB_NAME: wordpress_db
