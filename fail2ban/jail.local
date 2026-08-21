@@ -6,5 +6,5 @@ backend = systemd
 maxretry = 5
 findtime = 1h
 bantime = 1d
-ignoreip = 127.0.0.1/8 10.0.2.2 194.87.200.163
-destemail = sergeevrov@gmail.com
+ignoreip = 127.0.0.1/8 10.0.2.2
+destemail = example@mail.com
