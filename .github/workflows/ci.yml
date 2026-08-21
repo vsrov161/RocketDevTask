@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches: [ main, master, dev-ci-cd ]
-  pull_requests:
+  pull_request:
 
 jobs:
   compose-check:
@@ -11,25 +11,25 @@ jobs:
 
     steps:
       - name: Checkout
-      uses: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: validate docker-compose
-      run: docker compose config
+        run: docker compose config
 
       - name: start stack
-      run: docker compose up -d
+        run: docker compose up -d
 
       - name: wait for containers
-      run: sleep 100
+        run: sleep 100
 
       - name: check if containers running
-      run: docker compose ps | grep -q -E "wordpress|nginx|prometheus|grafana|mysql|node"
+        run: docker compose ps | grep -q -E "wordpress|nginx|prometheus|grafana|mysql|node"
 
       - name: show failure logs
-      if: failure()
-      run: docker compose logs
+        if: failure()
+        run: docker compose logs
 
       - name: stop stack
-      if: always()
-      run: docker compose down -v
+        if: always()
+        run: docker compose down -v
 
