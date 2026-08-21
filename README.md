@@ -81,7 +81,7 @@ sudo fail2ban-client status sshd
 > Файл `OS General-dashboard.json` лежит в `grafana/dashboard`
 
 ## GitHub Actions
-> С пайплайном вы можете ознакомиться по ссылке https://github.com/vsrov161/RocketDevTask/actions/runs/32486290983
+> С пайплайном вы можете ознакомиться по ссылке https://github.com/vsrov161/RocketDevTask/actions/
 
 ## Принятые решения
 - конфиги хранятся на хосте, монтируются с параметром `ro` (read-only) - **требование ТЗ**
