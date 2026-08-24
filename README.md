@@ -79,7 +79,9 @@ sudo fail2ban-client status sshd
 - Выберите `import dashboard`
 - На открывшейся старнице нажмите `Import dashboard` и выберите файл `json` вручную, либо перетащите его в это окно
 - Имя дашборда `Os General` и `UID` можете оставить без изменений, нажмите кнопку `Import` чтобы завершить добавление
-> Файл `OS General-dashboard.json` лежит в `grafana/dashboard`
+
+Файл `OS General-dashboard.json` лежит в `grafana/dashboard`
+
 > Необходимо в разделе `Data sources` нажать на `Add data source`, выбрать Prometheus, и в `connection` вставить http://prometheus:9090 
 
 ## GitHub Actions
