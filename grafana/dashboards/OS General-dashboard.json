@@ -4,18 +4,18 @@
   "metadata": {
     "name": "ads9rpz",
     "namespace": "default",
-    "uid": "",
-    "resourceVersion": "1787311159474995",
-    "generation": 4,
-    "creationTimestamp": "2026-08-21T11:16:03Z",
+    "uid": "72fb1d3d-aea9-4845-9a60-1e2eb926ed2f",
+    "resourceVersion": "1787581267953989",
+    "generation": 5,
+    "creationTimestamp": "2026-08-24T14:06:54Z",
     "labels": {
-      "grafana.app/deprecatedInternalID": "1089606917128192"
+      "grafana.app/deprecatedInternalID": "2219765676068864"
     },
     "annotations": {
-      "grafana.app/createdBy": "user:ffvu9gaql9reob",
+      "grafana.app/createdBy": "user:afw5kzzayk1s0e",
       "grafana.app/saved-from-ui": "Grafana v13.2.0 (f681b1359f)",
-      "grafana.app/updatedBy": "user:ffvu9gaql9reob",
-      "grafana.app/updatedTimestamp": "2026-08-21T11:19:19Z"
+      "grafana.app/updatedBy": "user:afw5kzzayk1s0e",
+      "grafana.app/updatedTimestamp": "2026-08-24T14:21:07Z"
     }
   },
   "spec": {
@@ -63,7 +63,7 @@
                       "group": "prometheus",
                       "version": "v0",
                       "datasource": {
-                        "name": "afvub4e2hzy0wc"
+                        "name": "cfw5lc9nypqf4b"
                       },
                       "spec": {
                         "editorMode": "builder",
@@ -85,7 +85,7 @@
                       "group": "prometheus",
                       "version": "v0",
                       "datasource": {
-                        "name": "afvub4e2hzy0wc"
+                        "name": "cfw5lc9nypqf4b"
                       },
                       "spec": {
                         "editorMode": "builder",
@@ -176,7 +176,32 @@
                     }
                   }
                 },
-                "overrides": []
+                "overrides": [
+                  {
+                    "__systemRef": "hideSeriesFrom",
+                    "matcher": {
+                      "id": "byNames",
+                      "options": {
+                        "mode": "exclude",
+                        "names": [
+                          "node_network_receive_bytes_total {__name__=\"node_network_receive_bytes_total\", device=\"lo\", instance=\"node_exporter:9100\", job=\"node\"}"
+                        ],
+                        "prefix": "All except:",
+                        "readOnly": true
+                      }
+                    },
+                    "properties": [
+                      {
+                        "id": "custom.hideFrom",
+                        "value": {
+                          "legend": false,
+                          "tooltip": true,
+                          "viz": true
+                        }
+                      }
+                    ]
+                  }
+                ]
               }
             }
           }
@@ -201,7 +226,7 @@
                       "group": "prometheus",
                       "version": "v0",
                       "datasource": {
-                        "name": "afvub4e2hzy0wc"
+                        "name": "cfw5lc9nypqf4b"
                       },
                       "spec": {
                         "editorMode": "builder",
@@ -316,7 +341,7 @@
                       "group": "prometheus",
                       "version": "v0",
                       "datasource": {
-                        "name": "afvub4e2hzy0wc"
+                        "name": "cfw5lc9nypqf4b"
                       },
                       "spec": {
                         "editorMode": "builder",
@@ -338,7 +363,7 @@
                       "group": "prometheus",
                       "version": "v0",
                       "datasource": {
-                        "name": "afvub4e2hzy0wc"
+                        "name": "cfw5lc9nypqf4b"
                       },
                       "spec": {
                         "editorMode": "builder",
