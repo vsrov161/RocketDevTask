@@ -82,7 +82,8 @@ sudo fail2ban-client status sshd
 
 Файл `OS General-dashboard.json` лежит в `grafana/dashboard`
 
-> Необходимо в разделе `Data sources` нажать на `Add data source`, выбрать Prometheus, и в `connection` вставить http://prometheus:9090 
+> Необходимо в разделе `Data sources` нажать на `Add data source`, выбрать Prometheus, и в `connection` вставить http://prometheus:9090
+в самом конце этой странице необходимо нажать `Save & test`
 
 ## GitHub Actions
 > С пайплайном вы можете ознакомиться по ссылке https://github.com/vsrov161/RocketDevTask/actions/
